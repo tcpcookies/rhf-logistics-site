@@ -55,9 +55,16 @@ ul { list-style: none; }
   align-items: center;
   gap: 10px;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--primary);
   letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.brand .brand-name {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.25;
 }
 
 .brand-mark {
@@ -916,7 +923,7 @@ ul { list-style: none; }
   gap: 10px;
   font-weight: 800;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin-bottom: 14px;
 }
 
@@ -952,6 +959,8 @@ ul { list-style: none; }
 }
 
 @media (max-width: 640px) {
+  .brand { font-size: 0.72rem; white-space: normal; }
+  .brand .brand-mark { width: 32px; height: 32px; font-size: 0.9rem; flex: 0 0 32px; }
   .nav-links {
     position: absolute;
     top: 68px;
